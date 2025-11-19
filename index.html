@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Login form" />
+  <meta name="author" content="Egbe Chigozie Leonard" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>leotech</title>
+
+  <!-- icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="G-style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="maincontainer">
+    <header class="site-header">
+      <div class="site-inner headerGa">
+        <div class="G1 brand">
+         <a href="index.html"><img src="image/IMG_5771[1] - Copy.PNG" alt="LEC logo" class="brand-logo" /></a> 
+        </div>
+
+        <nav class="G2 nav" aria-label="Primary navigation">
+          <button id="menuToggle" class="hamburger" aria-expanded="false" aria-controls="navList">
+            <i class="ri-menu-line"></i>
+          </button>
+
+          <ul id="navList" class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="mobile-only"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="G3 header-actions">
+          <button id="contactBtn" class="cta">Contact Me</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="herosectiona" id="hero">
+      <div class="site-inner hero-inner">
+        <div class="first-column">
+          <p class="world">WELCOME TO MY WORLD</p>
+
+          <h1 class="hello">
+            Hello — I'm <span class="leonard">Leonard Chigozie</span>
+          </h1>
+
+          <div class="role-rotator" aria-live="polite">
+            <span class="role current">Web Developer</span>
+            <span class="role">Frontend Developer</span>
+            <span class="role">Backend Developer</span>
+          </div>
+
+          <p class="passionate">
+            A passionate developer who crafts clean, efficient code. Constantly learning, solving problems,
+            and building innovative digital solutions. Driven by curiosity and creativity to make technology
+            work seamlessly.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#portfolio">Portfolio</a>
+            <a class="btn btn-outline" href="#contact">Hire</a>
+          </div>
+
+          <div class="follow">
+            <h4 class="uson">Follow us On</h4>
+            <div class="socials">
+              <a class="social" href="#" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+              <a class="social" href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+              <a class="social" href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-column">
+          <div class="imageA">
+            <img src="image/image18.png" alt="Leonard portrait or illustration" class="hero-image" />
+            <div class="childrenimg">
+              <button class="childrenimg1">Portfolio <i class="ri-arrow-left-line"></i></button>
+              <button class="childrenimg2">Hire</button>
+            </div>
+          </div>
+
+          <div class="services-list">
+            <button class="chip coBtn1">Prototype</button>
+            <button class="chip coBtn2">API Integration</button>
+            <button class="chip coBtn3">Web Application</button>
+            <button class="chip coBtn4">Business Website</button>
+            <button class="chip coBtn5">SEO Optimization</button>
+            <button class="chip coBtn6">App Development</button>
+            <button class="chip coBtn7">Software Development</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="site-inner">
+      <div class="mainonecontainer">
+        <div class="mainone" aria-hidden="true">
+          <div class="ma1">Prototype</div>
+          <div class="ma1">Integration of Api</div>
+          <div class="ma1">Web Application</div>
+          <div class="ma1">App development</div>
+          <div class="ma1">SEO optimization</div>
+          <div class="ma1">Business Website</div>
+          <div class="ma1">Software development</div>
+        </div>
+      </div>
+
+      <article class="services-section" id="portfolio">
+        <div class="sochima">
+          <div class="sochima2">
+            <p>My Specialization</p>
+            <h2>Services I Provide</h2>
+          </div>
+
+          <div class="service-cards">
+            <div class="card">
+              <div class="card-index">01.</div>
+              <div class="card-title">UI/UX Design</div>
+              <div class="card-desc">Designing usable, accessible interfaces and prototypes.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-index">02.</div>
+              <div class="card-title">Web Application</div>
+              <div class="card-desc">Modern, performance-driven web apps.</div>
+            </div>
+
+            <div class="card">
+              <div class="card-index">03.</div>
+              <div class="card-title">API Integration</div>
+              <div class="card-desc">Secure, reliable API connections.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+  <!-- Theme switcher (top right floating) -->
+  <div class="theme-switcher" aria-hidden="false" id="themeSwitcher">
+    <button class="ts-toggle" id="tsToggle" aria-expanded="false" title="Themes">🎨 Themes</button>
+    <nav class="ts-menu" id="tsMenu" aria-label="Theme chooser">
+      <button data-theme="light">🎨 Light</button>
+      <button data-theme="dark">🖤 Dark</button>
+      <button data-theme="green">🟢 Green</button>
+      <button data-theme="glass">🟣 Glass</button>
+      <button data-theme="flat">🟦 Flat</button>
+      <button data-theme="rounded">💡 Rounded</button>
+      <button data-theme="neon">🔥 Neon</button>
+    </nav>
+  </div>
+
+  <!-- Full width contact section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <h2 class="contact-title">Let's Work Together</h2>
+        <p class="contact-sub">Have an idea, project, or question? Send a quick message — I reply quickly.</p>
+
+        <ul class="contact-features">
+          <li><strong>Fast reply</strong> — usually within 24 hours</li>
+          <li><strong>Design + Development</strong> — prototypes, APIs, web apps</li>
+          <li><strong>Free consult</strong> — 15-minute discovery call</li>
+        </ul>
+
+        <div class="contact-meta">
+          <div><strong>Email</strong><br/><a href="mailto:egbechigozie771@mail.com">my-Gmail.com</a></div>
+          <div><strong>Location</strong><br/>Onitsha, Nigeria</div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-box" novalidate method="POST" action="https://formspree.io/f/xrbjpvep">
+        <div class="form-head">
+          <h3>Send a Message</h3>
+          <p class="small">I will get back to you soon — no spam.</p>
+        </div>
+
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="email" required />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Describe your project or question..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn submit">Send Message</button>
+          <button type="button" id="clearBtn" class="btn alt">Clear</button>
+        </div>
+
+        <div id="formAlert" class="form-alert" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+<!-- CONTACT POPUP MODAL -->
+<div id="contactModal" class="modal"  method="POST" action="https://formspree.io/f/xrbjpvep">
+  <div id="modalBox" class="modal-box">
+    <div class="modal-header" id="dragHeader">
+      <h3>Contact Me</h3>
+      <span class="close" id="closeModal">&times;</span>
+    </div>
+
+    <form id="contactForm" method="POST" action="https://formspree.io/f/xrbjpvep">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="What can I do for you?" required></textarea>
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="about-container">
+    
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate full-stack and AI developer with experience in
+        building modern web applications, mobile apps, and intelligent
+        systems. I focus on writing clean code and creating simple,
+        beautiful, and functional user experiences.
+      </p>
+
+      <p>
+        I specialize in JavaScript, Python, React, Flutter, and modern
+        UI/UX design. My goal is to build digital solutions that help
+        businesses grow and solve real-world problems.
+      </p>
+
+      <a href="#contact" class="about-btn">Contact Me</a>
+    </div>
+
+    <div class="about-img">
+      <img src="image/image18.png" alt="About Image">
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICE SECTION -->
+<section id="services">
+  <h2 class="service-title">Our Services</h2>
+
+  <div class="service-wrapper">
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>I create modern, responsive, and fast websites using HTML, CSS, JS, React, and Python.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>UI/UX Design</h3>
+      <p>Clean and user-friendly designs that improve user experience and brand quality.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Mobile App Development</h3>
+      <p>Cross-platform apps using React Native and Flutter, fast and easy to maintain.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Branding & Graphics</h3>
+      <p>Logos, banners, social media posters, and full brand identity for businesses.</p>
+    </div>
+  </div>
+</section>
+<section class="portfolio-slider">
+  <button class="slide-btn left" id="slideLeft">
+    <i class="ri-arrow-left-s-line"></i>
+  </button>
+
+  <div class="slider-wrapper">
+    <div class="slider" id="slider">
+      <!-- Your video items -->
+      <div class="slide-item">
+       <img src="image/Digital Marketing Hero Section Template Figma.jpg" alt="portfolio image">
+      </div>
+
+      <div class="slide-item">
+         <img src="image/Instagram Redesign.jpg" alt="portfolio image">
+      </div>
+
+      <div class="slide-item">
+        <img src="image/Modern Marketing Agency Hero Section Template in Figma for Stunning Website Designs.jpg" alt="portfolio image">
+      </div>
+          <div class="slide-item">
+        <img src="image/Freelance Board Hero Section.jpg" alt="portfolio image">
+      </div>
+      <!-- Add more items here -->
+    </div>
+  </div>
+
+  <button class="slide-btn right" id="slideRight">
+    <i class="ri-arrow-right-s-line"></i>
+  </button>
+</section>
+
+
+
+
+
+    <footer class="site-footer">
+   <footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Leotech</h3>
+      <p>Building modern digital solutions with passion and creativity.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: egbechigozie771@mail.com</p>
+      <p>Phone: +234 8140955201</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Leotech. All rights reserved.</p>
+  </div>
+</footer>
+
+  </div>
+
+
+</body>
+</html>
